@@ -1,0 +1,21 @@
+
+ body{background:red;text-align:center;color:white}
+ .popup{position:relative;-webkit-user-select:none;}
+ .showText{padding:8px 8px;background:yellow;border-radius:20px;display:inline-block;width:40%;
+ position:absolute;top:150%;left:29%;color:red;visibility:hidden;}
+ 
+  .showText::before{
+	  content:"";
+	  border-width:8px;
+	  border-style:solid;
+	  border-color: transparent transparent yellow transparent; 
+	  position:absolute;
+	  top:-28%;
+	  left:60%;
+	  font-size: 40px;
+	      font-family: sans-serif;
+  }
+  
+  .show{
+	  visibility:visible;
+  }

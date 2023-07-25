@@ -1,0 +1,411 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>AGRICULTURE</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Travello template project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap4/bootstrap.min.css'%}">
+<link href="{% static 'plugins/font-awesome-4.7.0/css/font-awesome.min.css'%}" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.css'%}">
+<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.theme.default.css'%}">
+<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/animate.css'%}">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/main_styles.css'%}">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/responsive.css'%}">
+</head>
+<style>
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 3px;
+  font-size: 15px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: transparent;}
+</style>
+<body>
+
+<div class="super_container">
+	
+	<!-- Header -->
+
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="header_content d-flex flex-row align-items-center justify-content-start">
+						<div class="header_content_inner d-flex flex-row align-items-end justify-content-start">
+							<div class="logo"><a href=""><h1 >AGRICULTURE</h1></a></div>
+							<nav class="main_nav">
+								<ul class="d-flex flex-row align-items-start justify-content-start">
+									<li><a href=""><h4>Home</h4></a></li>
+									<li><a href="index1"><h4>About us</h4></a></li>
+									<li><a href="login1"><h4>Admin Login</h4></a></li>
+									<li><a href="reg"><h4>User Login</h4></a></li>
+									
+									<!-- <li><div class="dropdown"> -->
+  <!-- <button class="dropbtn"><h4 style="background-color: transparent;">Login</h4></button> -->
+  <!-- <div class="dropdown-content"> -->
+    <!-- <a href="login1">Admin Login</a> -->
+    <!-- <a href="reg">User Login</a> -->
+   
+  </div>
+</div></li>
+									
+									
+						
+			<!--
+									
+									{% if user.is_authenticated %}
+									<li><div class="header_phone ml-auto"><h5> {{user.first_name}}</h5></div></li>
+									<li><a href="accounts/logout"><h5 style="margin-right: 180px;">Logout</h5></a></li>
+									{% else %}
+									<li><a href="accounts/register"><h5>Register</h5></a></li>
+									<li><a href="accounts/login"><h5>Login</h5></a></li>
+									{% endif %}
+								</ul>
+			 -->
+							</nav>
+
+							<!-- Hamburger -->
+
+							<div class="hamburger ml-auto">
+								<i class="fa fa-bars" aria-hidden="true"></i>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header_social d-flex flex-row align-items-center justify-content-start">
+			<ul class="d-flex flex-row align-items-start justify-content-start">
+				<li><a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="https://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href="https://www.linkedin.com"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+	</header>
+
+	<!-- Menu -->
+
+	<div class="menu">
+		<div class="menu_header d-flex flex-row align-items-center justify-content-start">
+			<div class="menu_logo"><a href=""><h3>Tweet Analyzer</h3></a></div>
+			<div class="menu_close_container ml-auto"><div class="menu_close"><div></div><div></div></div></div>
+		</div>
+		<div class="menu_content">
+			<ul>
+				<li><a href=""><h5>Home</h5></a></li>
+				<li><a href="index1"><h5>About us</h5></a></li>
+				<li><a href="news.html"><h5>News</h5></a></li>
+				<li><a href="login1"><h5>Admin</h5></a></li>
+				<li><a href="footer"><h5>Subscribe</h5></a></li>
+			</ul>
+		</div>
+		<div class="menu_social">
+			<div class="menu_phone ml-auto">Call us: 0 8 0 - 4 1 6 0 0 1 6</div>
+			<ul class="d-flex flex-row align-items-start justify-content-start">
+				<li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="https://www.twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<!-- Home -->
+
+	<div class="home">
+		
+		<!-- Home Slider -->
+		<div class="home_slider_container">
+			<div class="owl-carousel owl-theme home_slider">
+				
+				<!-- Slide -->
+				<div class="owl-item">
+					<div class="background_image" style="background-image:url(/static/images/SU.jpg)">
+						
+					</div>
+					<div class="home_slider_content_container">
+						<div class="container">
+							<div class="row">
+								<div class="col">
+									<div class="home_slider_content">
+										<div class="home_title"><h2></h2></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Slide -->
+				<div class="owl-item">
+					<div class="background_image" style="background-image:url(/static/images/h4.jpg)">
+						
+					</div>
+					<div class="home_slider_content_container">
+						<div class="container">
+							<div class="row">
+								<div class="col">
+									<div class="home_slider_content">
+										<div class="home_title"><h2>latest trends...</h2></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Slide -->
+				<div class="owl-item">
+					<div class="background_image" style="background-image:url(/static/images/h5.jpg)"></div>
+					<div class="home_slider_content_container">
+						<div class="container">
+							<div class="row">
+								<div class="col">
+									<div class="home_slider_content">
+										<div class="home_title"><h2>Know about any place</h2></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="home_page_nav">
+				<ul class="d-flex flex-column align-items-end justify-content-end">
+					<li><a href="#" data-scroll-to="#destinations"><h4>Get some top news</h4></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Destinations -->
+<div class="destinations" id="destinations">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<div class="section_title"><h2>Get News of Bangalore</h2></div>
+				</div>
+			</div>
+			<div class="row destinations_row">
+				<div class="col">
+					<div class="destinations_container item_grid">
+
+						<!-- Destination -->
+						<div class="destination item">
+							<div class="destination_image">
+								<img src="{% static 'images/h3.jpg' %}" alt="">
+							</div>
+							<div class="destination_content">
+								<div class="destination_title"><a href="https://www.newindianexpress.com/cities/bengaluru/2021/jul/20/bengaluru-residents-suffer-due-tocivic-bodiess-blame-gamefor-poor-condition-of-roads-in-horamavu-2332530.html">Road issues</a></div>
+								<div class="destination_subtitle"><p></p></div>
+							</div>
+						</div>
+
+						<!-- Destination -->
+						<div class="destination item">
+							<div class="destination_image">
+								<img src="{% static 'images/h6.jpg' %}" alt="">
+							</div>
+							<div class="destination_content">
+								<div class="destination_title"><a href="https://www.thehindu.com/news/cities/bangalore/streetlight-issue-send-an-sms/article8035561.ece#:~:text=The%20landline%20number%20080%2D22660000,to%20report%20non%2Dfunctioning%20streetlights.">Street light issues</a></div>
+								<div class="destination_subtitle"><p></p></div>
+							</div>
+						</div>
+
+						<!-- Destination -->
+						<div class="destination item">
+							<div class="destination_image">
+								<img src="{% static 'images/h8.png' %}" alt="">
+							</div>
+							<div class="destination_content">
+								<div class="destination_title"><a href="https://www.deccanherald.com/city/bengaluru-infrastructure/new-govt-company-to-handle-bengalurus-garbage-problem-957820.html">Garbage issues</a></div>
+								<div class="destination_subtitle"><p></p></div>
+							</div>
+						</div>
+						<div class="destination item">
+							<div class="destination_image">
+								<img src="{% static 'images/h9.jpg' %}" alt="">
+							</div>
+							<div class="destination_content">
+								<div class="destination_title"><a href="https://www.hindustantimes.com/cities/bengaluru-news/bengaluru-water-crisis-what-is-causing-it-101649830971943.html#:~:text=A%20survey%20in%20March%20this,to%201%2C450%20MLD%20by%202031.">Water issues</a></div>
+								<div class="destination_subtitle"><p>The Silicon Valley</p></div>
+							</div>
+						</div>
+					
+					<!-- Destination -->
+						<div class="destination item">
+							<div class="destination_image">
+								<img src="{% static 'images/h10.png' %}" alt="" style="height: 300px; width: 350px;">
+							</div>
+							<div class="destination_content">
+								<div class="destination_title"><a href="https://timesofindia.indiatimes.com/city/bangalore">Other issues</a></div>
+								<div class="destination_subtitle"><p></p></div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+
+<style type="text/css">
+.newsletter_input_name
+{
+	color: black;
+	text-align: inherit;
+}
+.newsletter_input_email
+	{
+	color: black;
+	text-align: inherit;
+}
+</style>
+	<footer class="footer">
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="{% static 'images/footer_2.jpg'%}" data-speed="0.8"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="newsletter">
+						<div class="newsletter_title_container text-center">
+							<div class="newsletter_title">Contact for more details :</div>
+							
+						</div>
+						<div class="newsletter_form_container">
+							<form action="#" class="newsletter_form d-flex flex-md-row flex-column align-items-start justify-content-between" id="newsletter_form">
+								<div class="d-flex flex-md-row flex-column align-items-start justify-content-between">
+									<div><input type="text" class="newsletter_input newsletter_input_name" id="newsletter_input_name" placeholder="Issue" required="required"><div class="input_border"></div></div>
+									<div><input type="email" class="newsletter_input newsletter_input_email" id="newsletter_input_email" placeholder="Your e-mail" required="required"><div class="input_border"></div></div>
+								</div>
+								<div><button class="newsletter_button"><h5>Send</h5></button></div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row footer_contact_row">
+				<div class="col-xl-10 offset-xl-1">
+					<div class="row">
+
+						<!-- Footer Contact Item -->
+						<div class="col-xl-4 footer_contact_col">
+							<div class="footer_contact_item d-flex flex-column align-items-center justify-content-start text-center">
+								<div class="footer_contact_icon"><img src="{% static 'images/sign.svg'%}" alt=""></div>
+								<div class="footer_contact_title"><h4>give us a call</h4></div>
+								<div class="footer_contact_list">
+									<ul>
+										<li><h4>Landline : 080 - 4 1 6 0 0 1 6</h4></li>
+										<li><h4>BESCOM : 1916</h4></li>
+								</div>
+							</div>
+						</div>
+
+						<!-- Footer Contact Item -->
+						<div class="col-xl-4 footer_contact_col">
+							<div class="footer_contact_item d-flex flex-column align-items-center justify-content-start text-center">
+								<div class="footer_contact_icon"><img src="{% static 'images/trekking.svg'%}" alt=""></div>
+								<div class="footer_contact_title"><h4>Address</h4></div>
+								<div class="footer_contact_list">
+									<ul style="max-width:190px">
+										<li><h4>Mandya</h4></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- Footer Contact Item -->
+						<div class="col-xl-4 footer_contact_col">
+							<div class="footer_contact_item d-flex flex-column align-items-center justify-content-start text-center">
+								<div class="footer_contact_icon"><img src="{% static 'images/around.svg'%}" alt=""></div>
+								<div class="footer_contact_title">send us a message</div>
+								<div class="footer_contact_list">
+									<ul>
+										<li><h4>agritrack2023@gmail.com</h4></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col text-center">
+<h4> <script>document.write(new Date().getFullYear());</script><i class="fa fa-heart-o" aria-hidden="true"> </i> 
+</h4>
+ 
+ </div>
+
+	</footer>
+
+</div>
+
+<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'styles/bootstrap4/popper.js' %}"></script>
+<script src="{% static 'styles/bootstrap4/bootstrap.min.js' %}"></script>
+<script src="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.js' %}"></script>
+<script src="{% static 'plugins/Isotope/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'plugins/scrollTo/jquery.scrollTo.min.js' %}"></script>
+<script src="{% static 'plugins/easing/easing.js' %}"></script>
+<script src="{% static 'plugins/parallax-js-master/parallax.min.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
